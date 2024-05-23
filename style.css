@@ -1,0 +1,62 @@
+th{
+    background-color: cadetblue;
+    color: saddlebrown;
+    font-size: 25px;
+    border: 1px solid black; /* Borde de las celdas */
+    padding: 10px; /* Padding dentro de las celdas */
+    text-align: center; /* Alineación del texto */
+}
+
+tr{
+    background-color: cadetblue;
+    font-size: 15px;
+    border: 1px solid black; /* Borde de las celdas */
+    padding: 10px; /* Padding dentro de las celdas */
+    text-align: center; /* Alineación del texto */
+}
+
+td{
+    background-color: cadetblue;
+    font-size: 15px;
+    border: 1px solid black; /* Borde de las celdas */
+    padding: 10px; /* Padding dentro de las celdas */
+    text-align: center; /* Alineación del texto */
+}
+
+.Tabla{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.Titulo{
+    color: sienna;
+    font-size: 35px;
+}
+
+.Subtitulo{
+    color: goldenrod;
+    font-size: 25px;
+}
+
+#Links{
+    color: darkgreen;
+    font-size: 20px;
+}
+
+img{
+    border:7px solid brown;
+    border-radius:22px;
+}
+
+body{
+    background-image: url(./imagenes/light-brown-background-juc7xihlltnu0zss\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
