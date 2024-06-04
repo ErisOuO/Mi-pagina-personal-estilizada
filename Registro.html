@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+    <body>
+        <h1>Trabajo con formularios</h1>
+        <h2>Registro de alumnos</h2>
+
+        <form action="./index.html" method="post" id="formularario" name="formulario">
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombre" placeholder="ej. Erick Eduardo" autocomplete="email">
+            <br>
+            <label for="app">Apellido Paterno</label><br>
+            <input type="text" name="app" placeholder="ej. Hernandez">
+            <br>
+            <label for="apm">Apellido Materno</label><br>
+            <input type="text" name="apn" placeholder="ej. Perez">
+            <br>
+            <label for="pass">Password...</label><br>
+            <input type="password" name="pass" placeholder="mangoconchile">
+            <input type="hidden" name="oculto" value="5">
+            <br>
+            <textarea name="text" id="" rows="5" cols="50"></textarea>
+            <input type="submit" value="Registrar">
+
+        </form>
+
+        <details>
+            <h2>Materias</h2>
+            <h3>Matematicas</h3>
+            <h3>programación</h3>
+            <h3>Ingles III</h3>
+            <h3>FILE I</h3>
+            <h3>Base de datos</h3>
+        </details>
+    </body>
+</html>
