@@ -6,27 +6,27 @@
     height: 100vh;
     background-color: rgb(43, 119, 105);
     color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 2%;
     border-radius: 7px;
 }
 
 .Titulo{
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 4em;
+    margin-bottom: .1em;
     text-align: center;
 
 }
 
 .Subtitulo{
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 1.75em;
+    margin-bottom: .1em;
     text-align: center;
 }
 
 .input{
-    width: 30%;
-    padding: 5px;
-    margin: 20px;
+    width: 95%;
+    padding: .8em;
+    margin: 1%;
     border-radius: 7px;
     border-color: rgb(21, 109, 61);
     border-width: 3px;
@@ -34,9 +34,9 @@
 }
 
 .boton{
-    width: 10%;
-    padding: 5px;
-    margin: 7px;
+    width: 90%;
+    padding: .8em;
+    margin: 1%;
     color: white;
     background-color: rgb(7, 68, 68);
     border-radius: 7px;
@@ -44,4 +44,24 @@
     border-width: 3px;
     border-style: dotted;
     cursor: pointer;
+}
+
+.botonezzz{
+    display: flex;
+    width: 90%;
+}
+
+/*media query para pantallas menores a 768px*/
+@media(width<=768px){
+    .botonezzz{
+        flex-direction: column;
+    }
+
+    .Titulo{
+        font-size: 3em;
+    }
+
+    .Subtitulo{
+        font-size: 1.5em;
+    }
 }

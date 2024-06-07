@@ -1,62 +1,94 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: darkcyan;
+    color: white;
+    padding: 2%;
+    border-radius: 7px;
+}
+
+.listazzz{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+}
+
 th{
     background-color: cadetblue;
     color: saddlebrown;
-    font-size: 25px;
-    border: 1px solid black; /* Borde de las celdas */
-    padding: 10px; /* Padding dentro de las celdas */
-    text-align: center; /* Alineación del texto */
+    font-size: 1.5em;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
 }
 
-tr{
+tr, td{
     background-color: cadetblue;
-    font-size: 15px;
-    border: 1px solid black; /* Borde de las celdas */
-    padding: 10px; /* Padding dentro de las celdas */
-    text-align: center; /* Alineación del texto */
-}
-
-td{
-    background-color: cadetblue;
-    font-size: 15px;
-    border: 1px solid black; /* Borde de las celdas */
-    padding: 10px; /* Padding dentro de las celdas */
-    text-align: center; /* Alineación del texto */
+    font-size: 1.25em;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
 }
 
 .Tabla{
     width: 80%;
-    margin: 20px auto;
+    margin: 20px;
     border-collapse: collapse;
 }
 
 .Titulo{
     color: sienna;
-    font-size: 35px;
+    font-size: 4em;
 }
 
-.Subtitulo{
+.Subtitulo, #Links{
     color: goldenrod;
-    font-size: 25px;
+    font-size: 2.5em;
 }
 
-#Links{
-    color: darkgreen;
-    font-size: 20px;
+li, p{
+    font-size: 1.25em;
 }
 
-img{
+.img{
+    width: 60%;
     border:7px solid brown;
-    border-radius:22px;
+    border-radius: 15px;
 }
 
-body{
-    background-image: url(./imagenes/light-brown-background-juc7xihlltnu0zss\ \(1\).jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/*Media query para pantallas menores a 768px*/
+@media(width<=768px){
+    body{
+        background-color: rgb(11, 97, 97);
+    }
+
+    .listazzz{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Titulo{
+        font-size: 2em;
+    }
+
+    .Subtitulo, #Links{
+        font-size: 1em;
+    }
+
+    li, p{
+        font-size: .8em;
+    }
+
+    th{
+        font-size: 1em;
+    }
+    
+    tr, td{
+        font-size: .75em;
+    }
 }
