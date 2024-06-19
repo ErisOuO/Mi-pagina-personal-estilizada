@@ -15,36 +15,63 @@
             <label for="nombre">Nombre del empleado</label>
             <input type="text" name="nombre" id="nombre"
              class="input" placeholder="Nombre" required
-             maxlength="20">
+             maxlength="20" pattern="^[A-Za-z\s]{5,20}$">
 
             <label for="app">Apellido paterno</label>
             <input type="text" name="app" id="app"
              class="input" placeholder="Apellido paterno" required
-             maxlength="20">
+             maxlength="20" pattern="^[A-Za-z\s]{5,20}$">
 
             <label for="apm">Apellido materno</label>
             <input type="text" name="apm" id="apm"
              class="input" placeholder="Apellido materno" required
-             maxlength="20">
-
+             maxlength="20" pattern="^[A-Za-z\s]{5,20}$">
+            
+             <!-- Nombre de usuario: Debe tener entre 5 y 15 caracteres alfanuméricos.-->
+            <label for="nombreusuario">Nombre de usuario</label>
+            <input type="text" name="nombreusuario" id="nombreusuario"
+            class="input" placeholder="Nombre de Usuario" required
+            maxlength="15" minlength="5" pattern="^[a-zA-Z0-9]{5,20}$"
+            title="Debe tener entre 5 y 15 caracteres alfanuméricos.">
+            
+            <!-- Fecha de Nacimiento: Debe estar en el formato YYYY-MM-DD.-->
             <label for="fch">Fecha de nacimiento</label>
-            <input type="date" class="input" required max="2006-01-01">
-
+            <input type="date" class="input" required max="2006-01-01" min="1900-01-01"
+            title="Debe estar en el formato YYYY-MM-DD.">
+            
+            <!-- Correo Electrónico: Debe ser una dirección de correo electrónico válida.-->
             <label for="email">Email</label>
-            <input type="email" class="input" placeholder="Email"
-             required maxlength="30">
+            <input type="email" id="email" class="input" placeholder="Email"required maxlength="30"
+             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required
+             title="Debe ser una dirección de correo electrónico válida.">
+            
+            <!-- Número de Teléfono: Debe seguir el formato internacional, comenzando con el signo + y hasta 15 dígitos.-->
+            <label for="telefono">Número de Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" placeholder="+528135745303"
+            maxlength="15" pattern="^\+\d{1,15}$" required
+            title="Debe seguir el formato internacional, comenzando con el signo + y hasta 15 dígitos."><br>
 
-            <label for="pass">Password</label>
+            <!-- Código Postal: Debe consistir en exactamente 5 dígitos.-->
+            <label for="codigop">Código Postal:</label><br>
+            <input type="number" id="codigop" name="codigop" pattern="^\d{5}$"
+             maxlength="5" required title="Debe consistir en exactamente 5 dígitos."><br>
+
+            <!-- Contraseña: Debe tener al menos 8 caracteres, incluyendo al menos una letra mayúscula,
+            una minúscula, un número y un carácter especial (!, @, #, etc.).-->
+            <br><label for="pass">Password</label>
             <input type="password" name="pass" id="pass" required
-             maxlength="15" minlength="8" class="input" placeholder="Password">
+             maxlength="15" minlength="8" class="input" placeholder="Password" 
+             pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*.])[A-Za-z\d!@#$%^&*.]{8,15}$"
+             title="Debe tener al menos 8 caracteres, incluyendo al menos una letra mayúscula, 
+             una minúscula, un número y un carácter especial (!, @, #, etc.).">
 
             <label for="pass2">Confirmar Password</label>
             <input type="password" name="pass2" id="pass2" required
-             maxlength="15" minlength="8" class="input" placeholder="Confirmar Password">
+             maxlength="15" minlength="8" class="input" placeholder="Confirmar Password"
+             pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*.])[A-Za-z\d!@#$%^&*.]{8,15}$">
 
             <input type="submit" class="boton" onclick="confirma()">
         </form>
-
     </div>
     <script src="./main.js"></script>
 </body>
